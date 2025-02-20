@@ -1,0 +1,81 @@
+@import "screen_sizes";
+
+$select-text: h1, h2, h3, h4, h5, h6, p, small;
+$bold: 700;
+
+// https://typescale.com/
+// Scale ratio: 1.125 (Major second)
+:root {
+    --font-3xsmall: 0.79rem;
+    --font-2xsmall: 0.889rem;
+    --font-xsmall: 1rem;
+    --font-small: 1.125rem;
+    --font-medium: 1.266rem;
+    --font-large: 1.424rem;
+    --font-xlarge: 1.602rem;
+    --font-2xlarge: 1.802rem;
+    --font-3xlarge: 2.027rem;
+    --font-4xlarge: 2.281rem;
+    
+    // Scale ratio: 1.2 (Minor third)
+    @media only screen and (min-width: $screenw-s) {
+        --font-3xsmall: 0.694rem;
+        --font-2xsmall: 0.833rem;
+        --font-xsmall: 1rem;
+        --font-small: 1.2rem;
+        --font-medium: 1.44rem;
+        --font-large: 1.728rem;
+        --font-xlarge: 2.074rem;
+        --font-2xlarge: 2.488rem;
+        --font-3xlarge: 2.986rem;
+        --font-4xlarge: 3.583rem;
+    }
+    
+    // Scale ratio: 1.25 (Major third)
+    @media only screen and (min-width: $screenw-m) {
+        --font-3xsmall: 0.64rem;
+        --font-2xsmall: 0.8rem;
+        --font-xsmall: 1rem;
+        --font-small: 1.25rem;
+        --font-medium: 1.563rem;
+        --font-large: 1.953rem;
+        --font-xlarge: 2.441rem;
+        --font-2xlarge: 3.052rem;
+        --font-3xlarge: 3.815rem;
+        --font-4xlarge: 4.768rem;
+    }
+    
+    // Scale ratio: 1.333 (Perfect fourth)
+    @media only screen and (min-width: $screenw-l) {
+        --font-3xsmall: 0.563rem;
+        --font-2xsmall: 0.75rem;
+        --font-xsmall: 1rem;
+        --font-small: 1.333rem;
+        --font-medium: 1.777rem;
+        --font-large: 2.369rem;
+        --font-xlarge: 3.157rem;
+        --font-2xlarge: 4.209rem;
+        --font-3xlarge: 5.61rem;
+        --font-4xlarge: 7.492rem;
+    }
+}
+
+body, button {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+h1 {font-weight: 850;}
+h2, h3, h4, h5, h6 {font-weight: 700;}
+strong {font-weight: $bold;}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: var(--font-3xlarge);}
+h2 {font-size: var(--font-2xlarge);}
+h3 {font-size: var(--font-xlarge);}
+h4 {font-size: var(--font-large);}
+h5 {font-size: var(--font-medium);}
+h6 {font-size: var(--font-small);}
+p {font-size: var(--font-xsmall);}
+small {font-size: var(--font-2xsmall);}

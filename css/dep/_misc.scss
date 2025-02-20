@@ -1,0 +1,31 @@
+@mixin outline($width: 0.04, $depth: 0.08, $color: $col-normal) {
+    $w-sqrt: sqrt(2) / 2 * $width;
+    text-shadow: #{$width}em 0 0 $color,
+                 #{-$width}em 0 0 $color,
+                 0 #{$width}em 0 $color,
+                 0 #{-$width}em 0 $color,
+
+                 #{$w-sqrt}em #{$w-sqrt}em 0 $color,
+                 #{-$w-sqrt}em #{-$w-sqrt}em 0 $color,
+                 #{$w-sqrt}em #{-$w-sqrt}em 0 $color,
+                 #{-$w-sqrt}em #{$w-sqrt}em 0 $color,
+
+
+                 #{$width}em #{$depth}em 0 $color,
+                 #{-$width}em #{$depth}em 0 $color,
+                 0 #{$width + $depth}em 0 $color,
+                 0 #{-$width + $depth}em 0 $color,
+
+                 #{$w-sqrt}em #{$w-sqrt + $depth}em 0 $color,
+                 #{-$w-sqrt}em #{-$w-sqrt + $depth}em 0 $color,
+                 #{$w-sqrt}em #{-$w-sqrt + $depth}em 0 $color,
+                 #{-$w-sqrt}em #{$w-sqrt + $depth}em 0 $color;
+}
+
+@mixin small-box-border {
+    @include box-border(10px, 15px, 10px);
+}
+@mixin box-border($width: 15px, $height: 25px, $radius: 10px) {
+    padding: $width $height;
+    border-radius: $radius;
+}
