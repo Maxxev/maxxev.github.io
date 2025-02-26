@@ -114,6 +114,10 @@ small {
 /***********************************************************************************/
 /* General
 /***********************************************************************************/
+:root {
+  --decalage-construction: 2rem;
+}
+
 html {
   cursor: url("/images/cursor.png") 10 10, auto;
 }
@@ -149,7 +153,24 @@ header {
   height: min(1080px, 100vh);
   margin-bottom: 4em;
 }
+header #banniere-construction {
+  position: fixed;
+  width: 100%;
+  height: var(--decalage-construction);
+  background-color: hsl(44, 100%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+}
+header #banniere-construction p {
+  margin-left: auto;
+}
+header #banniere-construction p:nth-of-type(2) {
+  cursor: pointer;
+}
 header nav {
+  top: var(--decalage-construction);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   width: 100%;
@@ -310,16 +331,22 @@ main > section h2 {
 main > section h3 {
   text-transform: uppercase;
   font-weight: 900;
-  background-color: hsl(44, 100%, 50%);
   display: inline-block;
+  font-size: var(--font-large);
 }
-main > section h3::-moz-selection {
+main > section h3 mark {
+  background-color: hsl(44, 100%, 50%);
+}
+main > section h3 mark::-moz-selection {
   color: hsl(44, 100%, 50%);
   background-color: black;
 }
-main > section h3::selection {
+main > section h3 mark::selection {
   color: hsl(44, 100%, 50%);
   background-color: black;
+}
+main > section h3 + p {
+  margin-top: 1em;
 }
 main > section h4 {
   margin-top: 1.5em;
@@ -335,7 +362,7 @@ main > section br {
 }
 main > section > article {
   align-self: end;
-  max-width: calc(100% - 2em);
+  width: calc(100% - 2em);
   margin-bottom: 4em;
 }
 
@@ -351,4 +378,7 @@ footer > div {
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
+}
+footer a {
+  text-decoration: none;
 }/*# sourceMappingURL=homepage.css.map */

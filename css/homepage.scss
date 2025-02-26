@@ -7,6 +7,10 @@
 /* General
 /***********************************************************************************/
 
+:root {
+    --decalage-construction: 2rem;
+}
+
 html {
     cursor: url("/images/cursor.png") 10 10, auto;
 }
@@ -43,7 +47,28 @@ header {
     background-color: $col-gray;
     height: min(1080px, 100vh);
     margin-bottom: 4em;
+
+    #banniere-construction {
+        position: fixed;
+        width: 100%;
+        height: var(--decalage-construction);
+        background-color: $col-primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 1em;
+
+        p {
+            margin-left: auto;
+            &:nth-of-type(2) {
+                cursor: pointer;
+            }
+        }
+    }
+
     nav {
+        top: var(--decalage-construction);
         backdrop-filter: blur(5px);
         width: 100%;
         font-size: var(--font-medium);
@@ -209,11 +234,18 @@ main {
             // margin-bottom: 0.2em;
             text-transform: uppercase;
             font-weight: 900;
-            background-color: $col-primary;
             display: inline-block;
-            &::selection {
-                color: $col-primary;
-                background-color: $col-normal;
+            font-size: var(--font-large);
+
+            mark {
+                background-color: $col-primary;
+                &::selection {
+                    color: $col-primary;
+                    background-color: $col-normal;
+                }
+            }
+            &+p {
+                margin-top: 1em;
             }
         }
         h4 {
@@ -232,7 +264,7 @@ main {
 
         >article {
             align-self: end;
-            max-width: calc(100% - $padding);
+            width: calc(100% - $padding);
             margin-bottom: 4em;
         }
     }
@@ -252,5 +284,9 @@ footer {
         display: flex;
         margin: 0 auto;
         justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
     }
 }

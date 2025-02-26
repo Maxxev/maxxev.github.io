@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maxence Veilleux - Portfolio</title>
-    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +12,19 @@
 </head>
 <body>
     <header>
+        <div id="banniere-construction">
+            <p>Site en construction, merci de votre tolérance</p>
+            <p>X</p>
+        </div>
         <nav>
             <h1><a href="#">Maxence<span></span>Veilleux</a></h1>
             <ul>
-                <li><a href="#sec-sites">Sites Web</a></li>
-                <li><a href="#sec-graphisme">Graphisme</a></li>
-                <li><a href="#sec-youtube">Chaîne YouTube</a></li>
-                <li><a href="#sec-game-jam">Game Jam</a></li>
-                <li><a href="#sec-formation">Formation</a></li>
+                <li><a href="#sites">Sites Web</a></li>
+                <li><a href="#graphisme">Graphisme</a></li>
+                <li><a href="#youtube">Chaîne YouTube</a></li>
+                <li><a href="#game-jam">Game Jam</a></li>
+                <li><a href="#prix">Prix d'excellence</a></li>
+                <li><a href="#formation">Formation</a></li>
             </ul>
         </nav>
         <div id="signatureC">
@@ -28,11 +33,12 @@
         <!-- Vidéo en arrière-plan -->
     </header>
     <main>
+        <!-- Site Web -->
         <section>
-            <a class="anchor" id="sec-sites"></a>
-            <h2>| Sites Web personnels</h2>
+            <a class="anchor" id="sites"></a>
+            <h2>| Site Web</h2>
             <article>
-                <h3>AnswerIt</h3>
+                <h3><mark>AnswerIt</mark></h3>
                 <h4>Année</h4>
                 <p>2023</p>
                 <h4>En bref</h4>
@@ -47,7 +53,7 @@
                 <br>
                 <div class="expandContainer">
                     <div>
-                        <video loop autoplay>
+                        <video loop autoplay muted>
                             <source src="media/answerit.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la vidéo.
                         </video>
@@ -57,122 +63,90 @@
                 </div>
             </article>
         </section>
+        <!-- Graphisme -->
         <section>
-            <a class="anchor" id="sec-graphisme"></a>
+            <a class="anchor" id="graphisme"></a>
             <h2>| Projets de graphisme</h2>
-            <article>
-                <h3>Projet</h3>
-                <h4>Année</h4>
-                <p>202X</p>
-                <h4>En bref</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <h4>Compétences</h4>
-                <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
-                </ul>
-                <br>
-                <br>
-                <div class="expandContainer">
-                    <div>
-                        <video loop autoplay>
-                            <source src="media/answerit.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la vidéo.
-                        </video>
-                        <br>
-                        <iframe class="ytVideo" src="https://www.youtube.com/embed/jVTknpZXtY0" title="CS50x 2023 Final Project: AnswerIt Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
+            <article id="conteneurImages">
+                <h3><mark>En construction...</mark></h3>
             </article>
         </section>
+        <!-- YouTube -->
         <section>
-            <a class="anchor" id="sec-youtube"></a>
+            <a class="anchor" id="youtube"></a>
             <h2>| Ex-créateur de contenu sur YouTube</h2>
             <article>
-                <h3>Projet</h3>
+                <h3><mark>Mon plus gros projet vidéo</mark></h3>
                 <h4>Année</h4>
-                <p>202X</p>
+                <p>2023</p>
                 <h4>En bref</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>J'ai planifié, enregistré et monté cette vidéo dans l'espace de trois mois à temps perdu. J'ai investi au-delà de <strong>100 heures</strong> dans le montage de cette vidéo de 14 minutes.</p>
                 <h4>Compétences</h4>
                 <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
+                    <li>Montage vidéo avec <strong>Premiere Pro</strong> et <strong>After Effects</strong></li>
+                    <li>Création d'éléments graphiques avec <strong>Photoshop</strong></li>
                 </ul>
                 <br>
                 <br>
                 <div class="expandContainer">
                     <div>
-                        <video loop autoplay>
-                            <source src="media/answerit.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la vidéo.
-                        </video>
-                        <br>
-                        <iframe class="ytVideo" src="https://www.youtube.com/embed/jVTknpZXtY0" title="CS50x 2023 Final Project: AnswerIt Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="ytVideo" src="https://www.youtube.com/embed/tQOdt5ZX_aE" title="I Became the Most Famous Minecraft Player!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </article>
         </section>
+        <!-- Game Jam -->
         <section>
-            <a class="anchor" id="sec-game-jam"></a>
+            <a class="anchor" id="game-jam"></a>
             <h2>| Game Jams</h2>
             <article>
-                <h3>Projet</h3>
-                <h4>Année</h4>
-                <p>202X</p>
+                <h3><mark>Game Jam Sherbrooke 2025</mark></h3>
+                <p><strong>Bientôt...</strong></p>
+            </article>
+            <article>
+                <h3><mark>Game Jam Sherbrooke 2024</mark></h3>
                 <h4>En bref</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>J'ai <strong>dirigé</strong> une équipe de trois participants nouvellement initiés à la conception de jeux vidéo. Nous avons produit le jeu <i>Just Sleep</i> en <strong>48 h</strong>.</p>
                 <h4>Compétences</h4>
                 <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
+                    <li>Développement avec <strong>Unity</strong> en <strong>C#</strong></li>
+                    <li>Animation de pixel arts sur <strong>Krita</strong></li>
                 </ul>
+                <h4>Essayer le jeu</h4>
+                <p><a href="https://money-san.itch.io/just-sleep">https://money-san.itch.io/just-sleep</a></p>
                 <br>
                 <br>
                 <div class="expandContainer">
                     <div>
-                        <video loop autoplay>
-                            <source src="media/answerit.mp4" type="video/mp4">
+                        <video controls>
+                            <source src="media/just_sleep_gameplay.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la vidéo.
                         </video>
-                        <br>
-                        <iframe class="ytVideo" src="https://www.youtube.com/embed/jVTknpZXtY0" title="CS50x 2023 Final Project: AnswerIt Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </article>
         </section>
+        <!-- Prix d'excellence -->
         <section>
-            <a class="anchor" id="sec-formation"></a>
+            <a class="anchor" id="prix"></a>
+            <h2>| Prix d'excellence</h2>
+            <article>
+                <h3><mark>En construction...</mark></h3>
+            </article>
+        </section>
+        <section>
+            <a class="anchor" id="formation"></a>
             <h2>| Formation</h2>
             <article>
-                <h3>Projet</h3>
-                <h4>Année</h4>
-                <p>202X</p>
-                <h4>En bref</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-                <h4>Compétences</h4>
-                <ul>
-                    <li>Lorem</li>
-                    <li>Ipsum</li>
-                </ul>
-                <br>
-                <br>
-                <div class="expandContainer">
-                    <div>
-                        <video loop autoplay>
-                            <source src="media/answerit.mp4" type="video/mp4">
-                            Votre navigateur ne supporte pas la vidéo.
-                        </video>
-                        <br>
-                        <iframe class="ytVideo" src="https://www.youtube.com/embed/jVTknpZXtY0" title="CS50x 2023 Final Project: AnswerIt Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                </div>
+                <h3><mark>En construction...</mark></h3>
             </article>
         </section>
     </main>
     <footer>
         <div>
             <p>© Copyright Maxence Veilleux</p>
+            <p><a href="https://github.com/Maxxev">GitHub</a></p>
+            <p><a href="https://www.linkedin.com/in/maxence-veilleux-396229297/">LinkedIn</a></p>
             <p>22 février 2025</p>
         </div>
     </footer>
