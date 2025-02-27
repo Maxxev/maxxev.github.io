@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr-ca">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,16 @@
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div id="banniere-construction">
-            <p>Site en construction, merci de votre tolérance</p>
-            <p>X</p>
+            <p>Site en construction, merci de votre patience</p>
+            <i class="fi fi-br-cross"></i>
         </div>
         <nav>
             <h1><a href="#">Maxence<span></span>Veilleux</a></h1>
@@ -24,7 +28,7 @@
                 <li><a href="#youtube">Chaîne YouTube</a></li>
                 <li><a href="#game-jam">Game Jam</a></li>
                 <li><a href="#prix">Prix d'excellence</a></li>
-                <li><a href="#formation">Formation</a></li>
+                <!-- <li><a href="#formation">Formation</a></li> -->
             </ul>
         </nav>
         <div id="signatureC">
@@ -38,27 +42,34 @@
             <a class="anchor" id="sites"></a>
             <h2>| Site Web</h2>
             <article>
-                <h3><mark>AnswerIt</mark></h3>
-                <h4>Année</h4>
-                <p>2023</p>
-                <h4>En bref</h4>
-                <p>AnswerIt est un médium social simple créé dans le contexte du cours en ligne CS50x. Il permet aux utilisateurs de publier du contenu et d'interagir avec les publications des autres utilisateurs.</p>
-                <h4>Compétences</h4>
-                <ul>
-                    <li>HTML, CSS, JS</li>
-                    <li>Python + Flask</li>
-                    <li>SQLite</li>
-                </ul>
-                <br>
-                <br>
+                <div class="text">
+                    <h3><mark>AnswerIt</mark></h3>
+                    <h4>Année</h4>
+                    <p>2023</p>
+                    <h4>En bref</h4>
+                    <p>AnswerIt est un médium social simple créé dans le contexte du cours en ligne CS50x. Il permet aux
+                        utilisateurs de publier du contenu et d'interagir avec les publications des autres utilisateurs.
+                    </p>
+                    <h4>Compétences</h4>
+                    <ul>
+                        <li>HTML, CSS, JS</li>
+                        <li>Python + Flask</li>
+                        <li>SQLite</li>
+                    </ul>
+                    <br>
+                    <br>
+                </div>
                 <div class="expandContainer">
                     <div>
-                        <video loop autoplay muted>
+                        <video loop autoplay muted class="rndCrn">
                             <source src="media/answerit.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la vidéo.
                         </video>
                         <br>
-                        <iframe class="ytVideo" src="https://www.youtube.com/embed/jVTknpZXtY0" title="CS50x 2023 Final Project: AnswerIt Website" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="ytVideo rndCrn" src="https://www.youtube.com/embed/jVTknpZXtY0"
+                            title="CS50x 2023 Final Project: AnswerIt Website" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </article>
@@ -67,8 +78,30 @@
         <section>
             <a class="anchor" id="graphisme"></a>
             <h2>| Projets de graphisme</h2>
-            <article id="conteneurImages">
-                <h3><mark>En construction...</mark></h3>
+            <article>
+                <div class="expandContainer forImages">
+                    <div>
+                        <div class="overlay"></div>
+                        <i class="fi fi-br-angle-left" id="carousel-back"></i>
+                        <div class="carousel" id="carousel-art">
+                            <div class="imgContainer rndCrn"></div>
+                            <div class="imgContainer rndCrn"></div>
+                            <div class="imgContainer rndCrn"></div>
+                        </div>
+                        <i class="fi fi-br-angle-right" id="carousel-next"></i>
+                    </div>
+                </div>
+                <div class="text">
+                    <h4>En bref</h4>
+                    <p>J'ai complété plusieurs <strong>contrats</strong> de création de miniatures YouTube par le passé. Il n'empêche que certaines images sont simplement des créations à temps perdu.</p>
+                    <h4>Outils principaux</h4>
+                    <ul>
+                        <li>Photoshop & Paint.net</li>
+                        <li>Illustrator</li>
+                        <li>Krita</li>
+                        <li>Blender</li>
+                    </ul>
+                </div>
             </article>
         </section>
         <!-- YouTube -->
@@ -76,21 +109,26 @@
             <a class="anchor" id="youtube"></a>
             <h2>| Ex-créateur de contenu sur YouTube</h2>
             <article>
-                <h3><mark>Mon plus gros projet vidéo</mark></h3>
-                <h4>Année</h4>
-                <p>2023</p>
-                <h4>En bref</h4>
-                <p>J'ai planifié, enregistré et monté cette vidéo dans l'espace de trois mois à temps perdu. J'ai investi au-delà de <strong>100 heures</strong> dans le montage de cette vidéo de 14 minutes.</p>
-                <h4>Compétences</h4>
-                <ul>
-                    <li>Montage vidéo avec <strong>Premiere Pro</strong> et <strong>After Effects</strong></li>
-                    <li>Création d'éléments graphiques avec <strong>Photoshop</strong></li>
-                </ul>
-                <br>
-                <br>
+                <div class="text">
+                    <h3><mark>Mon plus gros projet vidéo</mark></h3>
+                    <h4>Année</h4>
+                    <p>2023</p>
+                    <h4>En bref</h4>
+                    <p>J'ai planifié, enregistré et monté cette vidéo de 14 minutes dans l'espace de trois mois à temps perdu. J'ai investi au-delà de <strong>100 heures</strong> dans son montage.</p>
+                    <h4>Compétences</h4>
+                    <ul>
+                        <li>Montage vidéo avec <strong>Premiere Pro</strong> et <strong>After Effects</strong></li>
+                        <li>Création d'éléments graphiques avec <strong>Photoshop</strong></li>
+                    </ul>
+                    <br>
+                    <br>
+                </div>
                 <div class="expandContainer">
                     <div>
-                        <iframe class="ytVideo" src="https://www.youtube.com/embed/tQOdt5ZX_aE" title="I Became the Most Famous Minecraft Player!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="ytVideo rndCrn" src="https://www.youtube.com/embed/tQOdt5ZX_aE"
+                            title="I Became the Most Famous Minecraft Player!" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </article>
@@ -100,25 +138,31 @@
             <a class="anchor" id="game-jam"></a>
             <h2>| Game Jams</h2>
             <article>
-                <h3><mark>Game Jam Sherbrooke 2025</mark></h3>
-                <p><strong>Bientôt...</strong></p>
+                <div class="text">
+                    <h3><mark>Game Jam Sherbrooke 2025</mark></h3>
+                    <p><strong>Bientôt...</strong></p>
+                </div>
             </article>
             <article>
-                <h3><mark>Game Jam Sherbrooke 2024</mark></h3>
-                <h4>En bref</h4>
-                <p>J'ai <strong>dirigé</strong> une équipe de trois participants nouvellement initiés à la conception de jeux vidéo. Nous avons produit le jeu <i>Just Sleep</i> en <strong>48 h</strong>.</p>
-                <h4>Compétences</h4>
-                <ul>
-                    <li>Développement avec <strong>Unity</strong> en <strong>C#</strong></li>
-                    <li>Animation de pixel arts sur <strong>Krita</strong></li>
-                </ul>
-                <h4>Essayer le jeu</h4>
-                <p><a href="https://money-san.itch.io/just-sleep">https://money-san.itch.io/just-sleep</a></p>
-                <br>
-                <br>
+                <div class="text">
+                    <h3><mark>Game Jam Sherbrooke 2024</mark></h3>
+                    <h4>En bref</h4>
+                    <p>J'ai <strong>dirigé</strong> une équipe de trois participants nouvellement initiés à la
+                        conception de
+                        jeux vidéo. Nous avons produit le jeu <i>Just Sleep</i> en <strong>48 h</strong>.</p>
+                    <h4>Compétences</h4>
+                    <ul>
+                        <li>Développement avec <strong>Unity</strong> en <strong>C#</strong></li>
+                        <li>Animation de pixel arts sur <strong>Krita</strong></li>
+                    </ul>
+                    <h4>Essayer le jeu</h4>
+                    <p><a href="https://money-san.itch.io/just-sleep">https://money-san.itch.io/just-sleep</a></p>
+                    <br>
+                    <br>
+                </div>
                 <div class="expandContainer">
                     <div>
-                        <video controls>
+                        <video autoplay muted controls class="rndCrn">
                             <source src="media/just_sleep_gameplay.mp4" type="video/mp4">
                             Votre navigateur ne supporte pas la vidéo.
                         </video>
@@ -131,24 +175,58 @@
             <a class="anchor" id="prix"></a>
             <h2>| Prix d'excellence</h2>
             <article>
-                <h3><mark>En construction...</mark></h3>
+                <div class="text">
+                    <h3><mark>Bourse de la persévérance</mark></h3>
+                    <h4>Année</h4>
+                    <p>2024</p>
+                    <br>
+                    <br>
+                    <h3><mark>Bourse des anciens</mark></h3>
+                    <h4>Année</h4>
+                    <p>2024</p>
+                    <br>
+                    <br>
+                    <h3><mark>Trophée d'excellence au Gala des Bravos</mark></h3>
+                    <h4>Année</h4>
+                    <p>2020</p>
+                    <br>
+                    <br>
+                    <h3><mark>Bourse du Conseil des commissaires : 2ème fois</mark></h3>
+                    <h4>Année</h4>
+                    <p>2019</p>
+                    <br>
+                    <br>
+                    <h3><mark>Bourse du Conseil des commissaires : 1ère fois</mark></h3>
+                    <h4>Année</h4>
+                    <p>2017</p>
+                </div>
             </article>
         </section>
-        <section>
+        <!-- Formation -->
+        <!-- <section>
             <a class="anchor" id="formation"></a>
             <h2>| Formation</h2>
             <article>
-                <h3><mark>En construction...</mark></h3>
+                <div class="text">
+                    <h3><mark>En construction...</mark></h3>
+                </div>
+                <br>
+                <ul>
+                    <li></li>
+                </ul>
             </article>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div>
             <p>© Copyright Maxence Veilleux</p>
-            <p><a href="https://github.com/Maxxev">GitHub</a></p>
-            <p><a href="https://www.linkedin.com/in/maxence-veilleux-396229297/">LinkedIn</a></p>
-            <p>22 février 2025</p>
+            <p>27 février 2025</p>
         </div>
+        <div>
+            <p><a href="https://github.com/Maxxev"><i class="fi fi-brands-github"></i></a></p>
+            <p><a href="https://www.linkedin.com/in/maxence-veilleux-396229297/"><i class="fi fi-brands-linkedin"></i></a></p>
+        </div>
+        <p id="credits">Uicons par <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
     </footer>
 
     <section>
@@ -157,4 +235,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
