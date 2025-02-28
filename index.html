@@ -15,6 +15,8 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     <header>
         <div id="banniere-construction">
             <p>Site en construction, merci de votre patience</p>
@@ -34,7 +36,9 @@
         <div id="signatureC">
             <img src="media/signature.gif" alt="Maxence Veilleux" id="signature">
         </div>
-        <!-- Vidéo en arrière-plan -->
+        <video id="banner-video" loop autoplay muted>
+            <source src="media/banner.mp4" type="video/mp4">
+        </video>
     </header>
     <main>
         <!-- Site Web -->
@@ -47,7 +51,7 @@
                     <h4>Année</h4>
                     <p>2023</p>
                     <h4>En bref</h4>
-                    <p>AnswerIt est un médium social simple créé dans le contexte du cours en ligne CS50x. Il permet aux
+                    <p>AnswerIt est un médium social simple créé dans le contexte du cours en ligne <strong>CS50x de HarvardX</strong>. Il permet aux
                         utilisateurs de publier du contenu et d'interagir avec les publications des autres utilisateurs.
                     </p>
                     <h4>Compétences</h4>
@@ -140,7 +144,7 @@
             <article>
                 <div class="text">
                     <h3><mark>Game Jam Sherbrooke 2025</mark></h3>
-                    <p><strong>Bientôt...</strong></p>
+                    <p><strong>À venir en mars...</strong></p>
                 </div>
             </article>
             <article>
@@ -174,14 +178,18 @@
         <section>
             <a class="anchor" id="prix"></a>
             <h2>| Prix d'excellence</h2>
+            <div class="text">
+                <p id="message-fb-mobile"><mark>Consultez la version ordinateur et rafraîchissez la page pour voir les publications Facebook dans cette page.</mark><br></p>
+            </div>
             <article>
                 <div class="text">
                     <h3><mark>Bourse de la persévérance</mark></h3>
                     <h4>Obtention</h4>
                     <p>2024 - École internationale du Phare</p>
                     <br>
+                    <a class="facebook-url" src="https://www.facebook.com/duphare/posts/1020206626775304">https://www.facebook.com/duphare/posts/1020206626775304</a>
                 </div>
-                <iframe class="facebook-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1020204803442153%26set%3Da.1020206546775312%26type%3D3&show_text=true&width=auto" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe class="facebook-post no-text" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1020204803442153%26set%3Da.1020206546775312%26type%3D3&show_text=false&width=" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </article>
             <article>
                 <div class="text">
@@ -189,8 +197,9 @@
                     <h4>Obtention</h4>
                     <p>2024 - École internationale du Phare</p>
                     <br>
+                    <a class="facebook-url" src="https://www.facebook.com/duphare/posts/1016174943845139">https://www.facebook.com/duphare/posts/1016174943845139</a>
                 </div>
-                <iframe class="facebook-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fduphare%2Fposts%2Fpfbid0KL2PxD6ZqRU2KawJwLtjE936YvYvrFLZAqkoAZ5Lvjum9pr25gQvQrRLUtrzwTCTl&show_text=true&width=auto" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe class="facebook-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fduphare%2Fposts%2Fpfbid0KL2PxD6ZqRU2KawJwLtjE936YvYvrFLZAqkoAZ5Lvjum9pr25gQvQrRLUtrzwTCTl&show_text=false&width=" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </article>
             <article>
                 <div class="text">
@@ -198,8 +207,9 @@
                     <h4>Obtention</h4>
                     <p>2020 - École Sainte-Anne</p>
                     <br>
+                    <a class="facebook-url" src="https://www.facebook.com/CSSsherbrooke/photos/a.3127925457236446/3127926830569642">https://www.facebook.com/CSSsherbrooke/photos/a.3127925457236446/3127926830569642</a>
                 </div>
-                <iframe id="test" class="facebook-post" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCSSsherbrooke%2Fphotos%2Fa.3127925457236446%2F3127926830569642%2F%3Ftype%3D3&show_text=true&width=auto" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <iframe class="facebook-post short" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCSSsherbrooke%2Fphotos%2Fa.3127925457236446%2F3127926830569642%2F%3Ftype%3D3&show_text=false&width=" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
             </article>
             <article>
                 <div class="text">

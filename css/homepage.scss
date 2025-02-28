@@ -2,11 +2,12 @@
 @import "dep/colors";
 @import "dep/misc";
 @import "dep/keyframes";
+@import "facebook";
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 @import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
 
 /***********************************************************************************/
-/* General
+/* Règles générales
 /***********************************************************************************/
 
 :root {
@@ -27,7 +28,6 @@ html {
 
     &::selection {
         background-color: $col-primary;
-        // color: $col-white;
     }
 }
 
@@ -48,14 +48,33 @@ a {
     }
 }
 
+/***********************************************************************************/
+/* Classes réutilisables
+/***********************************************************************************/
+
 .rndCrn {
     border-radius: 5px;
 }
 
+/***********************************************************************************/
+/* Header
+/***********************************************************************************/
+
 header {
-    background-color: $col-gray;
+    @keyframes fade-out-banner {
+        from {background-color: $col-gray;}
+        to {background-color: transparent;}
+    }
+
+    animation-name: fade-out-banner;
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+    animation-fill-mode: both;
+
     height: min(1080px, 100vh);
     margin-bottom: 4em;
+    position: relative;
+    overflow: hidden;
 
     #banniere-construction {
         z-index: 100;
@@ -79,6 +98,18 @@ header {
             padding-top: 0.2em;
             cursor: pointer;
         }
+    }
+
+    #banner-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        align-self: center;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(0.3);
     }
 
     nav {
@@ -184,6 +215,16 @@ header {
         #signature {
             width: min(18em, calc(100vw - 2rem));
 
+            @keyframes color-change {
+                // from {filter: invert(0%);}
+                to {filter: invert(100%);}
+            }
+        
+            animation-name: color-change;
+            animation-duration: 1s;
+            animation-delay: 2.2s;
+            animation-fill-mode: both;
+
             &::selection {
                 background-color: transparent;
             }
@@ -234,7 +275,6 @@ main {
         }
 
         h3 {
-            // margin-bottom: 0.2em;
             text-transform: uppercase;
             font-weight: 900;
             display: inline-block;
@@ -271,21 +311,15 @@ main {
             height: 2em;
         }
 
+        .text {
+            margin-left: 1rem;
+        }
+
         >article {
             align-self: center;
             width: calc(100% - $padding);
             margin-bottom: var(--font-xlarge);
-
-            .facebook-post {
-                margin: 0 auto;
-                display: block;
-                width: 100%;
-                height: 1000px;
-            }
-
-            .text {
-                margin-left: 1rem;
-            }
+            word-wrap: break-word;
 
             .expandContainer {
                 align-self: center;
