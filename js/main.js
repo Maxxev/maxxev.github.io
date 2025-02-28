@@ -38,3 +38,42 @@ function mod(x, y) {
         x += y;
     return x % y;
 }
+
+
+// FACEBOOK POST
+
+let lastResize = 0;
+let resizeId;
+const facPosts = document.getElementsByClassName("facebook-post");
+const timeoutDelay = 300;
+addEventListener("resize", updateFacebookPostsWidth);
+
+updateFacebookPostsWidth();
+// updateFacebookPostsSize();
+function updateFacebookPostsWidth() {
+    if (Date.now() < lastResize + timeoutDelay) {
+        clearTimeout(resizeId);
+    }
+    
+    lastResize = Date.now();
+    resizeId = setTimeout(() => {
+        for (post of facPosts) {
+            let result = Math.round(post.parentNode.scrollWidth);
+            post.parentElement.backgroundColor = "red";
+            // console.log(post.parentNode.scrollWidth);
+            post.src = post.src.slice(0, post.src.indexOf("width=") + 6) + result;
+        }
+    }, timeoutDelay);
+}
+const timer = ms => new Promise(res => setTimeout(res, ms));
+async function updateFacebookPostsHeight() {
+    while (true)
+    {
+        for (post of facPosts) {
+            // post.style.height = post.contentWindow.document.querySelector("._li").scrollHeight + 'px';
+            console.log(post.contentWindow.document.body);
+        }
+        await timer(300);
+    }
+}
+updateFacebookPostsHeight();
