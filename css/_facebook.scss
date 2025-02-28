@@ -1,0 +1,22 @@
+.facebook-post {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: calc(820px + 0.75 * (100vw - 724px));
+    &.no-text {
+        height: calc(820px + 100vw - 724px);
+    }
+    max-height: 820px;
+    visibility: hidden;
+    &.short {
+        height: calc(450px + 0.75 * (100vw - 724px));
+        max-height: 450px;
+    }
+}
+
+#message-fb-mobile {
+    display: none;
+    >mark {
+        background-color: $col-accent;
+    }
+}
